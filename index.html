@@ -6,21 +6,25 @@
     <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.4.0/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
   </head>
     
   <body>
     <div id='container'>
-      <h1>To-do List<i class='fa fa-plus'></i></h1>
-      <input type='text' placeholder='Add New Todo'>
+      <div id='todo'>
+        <h1>To-do List<i class="fas fa-calendar-plus"></i></h1>
+        <input type='text' id='todoInput' placeholder='Add New Todo'>
+        <ul id='todoList'></ul>
+      </div>
       
-      <ul>
-        <li><span><i class="fa fa-trash"></i></span> Go to potions class</li>
-        
-      </ul>
+      <div id='dates'>
+        <h1>Important Dates <i class="fa fa-list"></i></h1>
+        <input type='text' id='datesInput' placeholder="Date | Recurrence | Time | Event">
+        <ul id='datesList'></ul>
+      </div>
     </div>
+      
     
     
     
